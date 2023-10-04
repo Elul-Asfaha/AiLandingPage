@@ -2,6 +2,14 @@ import { useState } from "react";
 import work from "../assets/work.png";
 const Home = () => {
     const [email, setEmail] = useState("");
+    const partners = [
+        { img: "https://source.unsplash.com/1700x1000?logo" },
+        { img: "https://source.unsplash.com/1700x1001?logo" },
+        { img: "https://source.unsplash.com/1700x1002?logo" },
+        { img: "https://source.unsplash.com/1700x1003?logo" },
+        { img: "https://source.unsplash.com/1700x1004?logo" },
+        { img: "https://source.unsplash.com/1700x1005?logo" },
+    ];
     return (
         <section className='px-5 md:px-10 max-w-[1400px] min-h-[80vh] flex flex-col justify-center'>
             <div className='grid sm:grid-cols-2 py-10 md:py-20 gap-5 md:gap-10'>
@@ -51,49 +59,19 @@ const Home = () => {
                     growing startups use Slite as their single source of truth
                 </p>
             </div>
-            <div className='grid grid-cols-3 md:grid-cols-6 gap-5 py-10'>
-                <div className='flex bg-gray-100 w-full p-5 md:p-7 h-[80px] md:h-[150px]'>
-                    <img
-                        src='https://source.unsplash.com/1700x1000?logo'
-                        alt=''
-                        className='bg-gray-100 w-full object-cover'
-                    />
-                </div>
-                <div className='flex bg-gray-100 w-full p-5 md:p-7 h-[80px] md:h-[150px]'>
-                    <img
-                        src='https://source.unsplash.com/1700x1000?logo'
-                        alt=''
-                        className='bg-gray-100 w-full object-cover'
-                    />
-                </div>
-                <div className='flex bg-gray-100 w-full p-5 md:p-7 h-[80px] md:h-[150px]'>
-                    <img
-                        src='https://source.unsplash.com/1700x1000?logo'
-                        alt=''
-                        className='bg-gray-100 w-full object-cover'
-                    />
-                </div>
-                <div className='flex bg-gray-100 w-full p-5 md:p-7 h-[80px] md:h-[150px]'>
-                    <img
-                        src='https://source.unsplash.com/1700x1000?logo'
-                        alt=''
-                        className='bg-gray-100 w-full object-cover'
-                    />
-                </div>
-                <div className='flex bg-gray-100 w-full p-5 md:p-7 h-[80px] md:h-[150px]'>
-                    <img
-                        src='https://source.unsplash.com/1700x1000?logo'
-                        alt=''
-                        className='bg-gray-100 w-full object-cover'
-                    />
-                </div>
-                <div className='flex bg-gray-100 w-full p-5 md:p-7 h-[80px] md:h-[150px]'>
-                    <img
-                        src='https://source.unsplash.com/1700x1000?logo'
-                        alt=''
-                        className='bg-gray-100 w-full object-cover'
-                    />
-                </div>
+            <div className='grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-6 gap-5 py-10'>
+                {partners.map((items, index) => (
+                    <div
+                        key={index}
+                        className='flex bg-gray-100 w-full p-5 md:p-7 h-[80px]  md:h-[150px]'
+                    >
+                        <img
+                            src={items.img}
+                            alt=''
+                            className='bg-gray-100 w-full object-cover'
+                        />
+                    </div>
+                ))}
             </div>
         </section>
     );
