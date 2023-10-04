@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 
 const App = () => {
     return (
-        <div>
+        <div className='flex flex-col items-center'>
             <Nav />
             <Home />
         </div>
