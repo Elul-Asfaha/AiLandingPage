@@ -4,16 +4,24 @@ const Home = () => {
     const [email, setEmail] = useState("");
     return (
         <section className='px-5 md:px-10 max-w-[1400px] min-h-[80vh] flex flex-col justify-center'>
-            <div className='grid md:grid-cols-2 py-10 md:py-20 gap-5 md:gap-10'>
+            <div className='grid sm:grid-cols-2 py-10 md:py-20 gap-5 md:gap-10'>
                 <div className='flex flex-col justify-center gap-5'>
-                    <p className='text-6xl md:text-8xl text-justify'>
-                        Autopilot
+                    <p className='text-6xl flex justify-between md:text-8xl text-justify'>
+                        <span>A</span>
+                        <span>u</span>
+                        <span>t</span>
+                        <span>o</span>
+                        <span>p</span>
+                        <span>i</span>
+                        <span>l</span>
+                        <span>o</span>
+                        <span>t</span>
                     </p>
                     <p className='text-xl font-semibold'>
                         Free up your team from the burdens of creating, manging
                         and finding trusted company information.
                     </p>
-                    <form className='w-full flex flex-col gap-3 md:gap-0 md:flex-row'>
+                    <form className='w-full flex flex-col gap-3 md:gap-0 md:flex-row  mt-7'>
                         <input
                             type='email'
                             value={email}
@@ -21,7 +29,7 @@ const Home = () => {
                             placeholder='name@company.com'
                             className='flex-1 bg-gray-100 object-cover px-5 outline-none py-2'
                         />{" "}
-                        <button className='bg-[#FA000B] md:w-auto px-5 py-2 font-bold text-white'>
+                        <button className='bg-[#FA000B] md:w-auto px-5 py-3 font-bold text-white'>
                             Sign up for free
                         </button>
                     </form>
@@ -36,8 +44,10 @@ const Home = () => {
                 </div>
             </div>
             <div className='flex flex-col md:flex-row md:items-center'>
-                <p className='w-fit text-7xl font-bold'>200,000+</p>
-                <p className='w-full text-right text-2xl font-bold'>
+                <p className='md:w-fit text-7xl font-bold text-center'>
+                    200,000+
+                </p>
+                <p className='w-full mt-2 md:mt-0 text-center md:text-right text-2xl font-bold'>
                     growing startups use Slite as their single source of truth
                 </p>
             </div>
