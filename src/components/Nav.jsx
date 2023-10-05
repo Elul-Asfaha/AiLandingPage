@@ -1,4 +1,6 @@
-const Nav = () => {
+import { BiMenu } from "react-icons/bi";
+
+const Nav = ({ navToggler }) => {
     return (
         <div className='max-w-[1400px] flex items-center justify-between font-semibold w-full px-10 py-5'>
             <div>logo</div>
@@ -15,6 +17,9 @@ const Nav = () => {
                     Start for free
                 </p>
             </div>
+            <button className='text-3xl' onClick={navToggler}>
+                <BiMenu />
+            </button>
         </div>
     );
 };

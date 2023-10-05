@@ -41,7 +41,7 @@ const ForWhat = () => {
     return (
         <section className='w-full py-5 md:py-16 bg-black text-white'>
             <div className='px-5 md:px-10 max-w-[1400px] mx-auto min-h-[80vh] flex flex-col justify-center gap-10'>
-                <p className='flex mt-10 md:mt-0 text-[5vw] xl:text-[4.2vw] text-justify'>
+                <p className='flex mt-10 md:mt-0 text-2xl md:text-[5vw] xl:text-[4.2vw] text-justify'>
                     Designed for all types of knowledge.
                 </p>
                 <p className='text-justify md:mb-10'>
