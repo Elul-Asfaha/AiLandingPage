@@ -17,7 +17,7 @@ const Nav = ({ navToggler }) => {
                     Start for free
                 </p>
             </div>
-            <button className='text-3xl' onClick={navToggler}>
+            <button className='text-3xl md:hidden' onClick={navToggler}>
                 <BiMenu />
             </button>
         </div>

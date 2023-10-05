@@ -72,7 +72,7 @@ const Features = () => {
         },
     ];
     return (
-        <section className='px-5 md:px-10 w-full max-w-[1400px] min-h-[80vh] py-16 flex flex-col'>
+        <section className='px-5 md:px-10 w-full max-w-[1400px] py-16 flex flex-col'>
             <p className='text-3xl md:text-5xl font-semibold pb-10'>
                 Get going in no time.
             </p>

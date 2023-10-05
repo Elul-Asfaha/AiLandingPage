@@ -11,7 +11,7 @@ const Home = () => {
         { img: "https://source.unsplash.com/1700x1005?logo" },
     ];
     return (
-        <section className='px-5 md:px-10 max-w-[1400px] min-h-[80vh] flex flex-col justify-center'>
+        <section className='px-5 md:px-10 max-w-[1400px] flex flex-col justify-center'>
             <div className='grid sm:grid-cols-2 py-10 md:py-20 gap-5 md:gap-10'>
                 <div className='flex flex-col justify-center gap-5'>
                     <p className='text-6xl flex justify-between md:text-8xl text-justify'>

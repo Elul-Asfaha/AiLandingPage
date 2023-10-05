@@ -13,13 +13,15 @@ const App = () => {
         console.log(navToggled);
     };
     return (
-        <div className='flex flex-col items-center relative'>
-            <SideNav />
-            <Nav navToggler={handleNavToggler} />
-            <Home />
-            <ForWhat />
-            <Features />
-            <Footer />
+        <div className='flex flex-col items-center overflow-y-hidden md:overflow-y-auto h-screen relative'>
+            <SideNav navToggler={handleNavToggler} navToggled={navToggled} />
+            <div className='overflow-y-scroll scrollbar-hide'>
+                <Nav navToggler={handleNavToggler} />
+                <Home />
+                <ForWhat />
+                <Features />
+                <Footer />
+            </div>
         </div>
     );
 };
