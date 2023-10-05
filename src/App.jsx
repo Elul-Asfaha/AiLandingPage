@@ -1,3 +1,4 @@
+import Features from "./components/Features";
 import ForWhat from "./components/ForWhat";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
@@ -8,6 +9,7 @@ const App = () => {
             <Nav />
             <Home />
             <ForWhat />
+            <Features />
         </div>
     );
 };
