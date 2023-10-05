@@ -3,7 +3,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 const SideNav = ({ navToggled, navToggler }) => {
     return (
         <div
-            className={`md:hidden overflow-scroll w-[100%] absolute top-0 h-full duration-500 ease-in-out ${
+            className={`md:hidden overflow-scroll w-[100%] z-30 absolute top-0 h-full duration-500 ease-in-out ${
                 !navToggled ? "right-0" : "right-[-100%]"
             }`}
         >
@@ -11,7 +11,7 @@ const SideNav = ({ navToggled, navToggler }) => {
                 className='absolute top-0 bottom-0 left-0 right-0 z-30'
                 onClick={navToggler}
             ></div>
-            <div className='w-[80%]  text-white h-full absolute inset-y-0 right-0 p-5 bg-[#FC8E22] z-40 flex justify-between'>
+            <div className='w-[80%] text-white h-full absolute inset-y-0 right-0 p-5 bg-[#FC8E22] z-40 flex justify-between'>
                 <button
                     onClick={navToggler}
                     className='px-4 h-fit w-fit text-3xl'
