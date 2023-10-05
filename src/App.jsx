@@ -15,7 +15,7 @@ const App = () => {
     return (
         <div className='flex flex-col items-center overflow-y-hidden md:overflow-y-auto h-screen relative'>
             <SideNav navToggler={handleNavToggler} navToggled={navToggled} />
-            <div className='overflow-y-scroll scrollbar-hide'>
+            <div className='overflow-y-scroll scrollbar-hide z-20'>
                 <Nav navToggler={handleNavToggler} />
                 <Home />
                 <ForWhat />
