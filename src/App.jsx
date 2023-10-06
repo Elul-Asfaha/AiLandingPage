@@ -13,7 +13,7 @@ const App = () => {
         console.log(navToggled);
     };
     return (
-        <div className='flex flex-col items-center overflow-y-hidden md:overflow-y-auto h-[100vh] relative'>
+        <div className='flex flex-col items-center w-screen overflow-x-hidden overflow-y-hidden md:overflow-y-auto h-[100vh] relative'>
             <SideNav navToggler={handleNavToggler} navToggled={navToggled} />
             <div className='overflow-y-scroll scrollbar-hide z-20'>
                 <Nav navToggler={handleNavToggler} />

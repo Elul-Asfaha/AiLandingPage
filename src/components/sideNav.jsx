@@ -4,7 +4,7 @@ const SideNav = ({ navToggled, navToggler }) => {
     return (
         <div
             className={`md:hidden overflow-scroll w-[100%] z-30 absolute top-0 h-full duration-500 ease-in-out ${
-                !navToggled ? "right-0" : "right-[-100%]"
+                navToggled ? "right-0" : "right-[-100%]"
             }`}
         >
             <div
